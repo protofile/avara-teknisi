@@ -27,11 +27,12 @@ body {
 
 /* LOGIN PAGE */
 .login-page {
-    @apply relative grid content-center h-screen min-h-full;
+    @apply relative grid content-center h-full min-h-screen;
 }
 .login-page::before {
     background-image: url('../images/bg-login.png');
     background-position-x: center;
+    background-position-y: 25%;
     content: "";
     @apply absolute top-0 left-0 right-0 bg-no-repeat bg-cover h-2/3 -z-10;
 }
@@ -42,8 +43,11 @@ body {
 .login-page .avara-logo img {
     max-width: 190px;
 }
+.login-page .wrapper {
+    @apply mx-4 my-14;
+}
 .login-content {
-    @apply px-4 py-8 m-5 mt-16 bg-white shadow-md rounded-2xl;
+    @apply max-w-lg px-4 py-8 mx-auto mt-16 bg-white shadow-md rounded-2xl;
 }
 .login-content h1 {
     @apply mb-6 text-center text-gray-700;
@@ -84,7 +88,10 @@ body {
     @apply text-xs font-bold;
 }
 .header-notif {
-    @apply flex items-center justify-center w-8 h-8 text-white bg-orange-700 rounded-full;
+    @apply relative flex items-center justify-center w-8 h-8 text-white bg-orange-700 rounded-full;
+}
+.header-notif .notif {
+    @apply absolute flex items-center justify-center w-4 h-4 text-xs text-white bg-orange-700 rounded-full -right-1 -top-1;
 }
 .header-menu span {
     @apply text-xl text-blue-700;
@@ -144,6 +151,9 @@ body {
 body.without-keyboard {
     padding-bottom: 0;
 }
+body.login-page {
+    @apply p-0 m-0;
+}
 .body-content {
     min-height: calc(100vh - 83px - 62px);
     @apply p-5 bg-gray-50;
@@ -193,7 +203,8 @@ body.without-keyboard .body-content {
 .detail-text .icon-text {
     @apply items-center justify-between;
 }
-.detail-text .icon-text span {
+.detail-text .icon-text span,
+.detail-text .icon-text a {
     @apply text-xl text-gray-400;
 }
 .pic-content {

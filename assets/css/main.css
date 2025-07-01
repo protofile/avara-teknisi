@@ -726,14 +726,15 @@ body {
 .login-page {
   position: relative;
   display: grid;
-  height: 100vh;
-  min-height: 100%;
+  height: 100%;
+  min-height: 100vh;
   align-content: center;
 }
 
 .login-page::before {
   background-image: url('../images/bg-login.png');
   background-position-x: center;
+  background-position-y: 25%;
   content: "";
   position: absolute;
   top: 0px;
@@ -763,9 +764,18 @@ body {
   max-width: 190px;
 }
 
+.login-page .wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 .login-content {
-  margin: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 4rem;
+  max-width: 32rem;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -893,6 +903,7 @@ body {
 }
 
 .header-notif {
+  position: relative;
   display: flex;
   height: 2rem;
   width: 2rem;
@@ -901,6 +912,24 @@ body {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(251 69 5 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.header-notif .notif {
+  position: absolute;
+  right: -0.25rem;
+  top: -0.25rem;
+  display: flex;
+  height: 1rem;
+  width: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 69 5 / var(--tw-bg-opacity));
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1009,6 +1038,11 @@ body {
 
 body.without-keyboard {
   padding-bottom: 0;
+}
+
+body.login-page {
+  margin: 0px;
+  padding: 0px;
 }
 
 .body-content {
@@ -1137,7 +1171,8 @@ body.without-keyboard .body-content {
   justify-content: space-between;
 }
 
-.detail-text .icon-text span {
+.detail-text .icon-text span,
+.detail-text .icon-text a {
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
