@@ -22,6 +22,12 @@ module.exports = {
         'orange': {
           700: '#FB4505',
         },
+        'red': {
+          700: '#D41F1F',
+        },
+        'green': {
+          700: '#41C641',
+        },
       },
       boxShadow: {
         '3xl': '0px 4px 16px 0px rgba(51,65,85,0.15)',
