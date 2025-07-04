@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Avara - Detail Tiket</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/fonts/remixicon/fonts/remixicon.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="avara-header">
+      <div class="container">
+        <div class="grid grid-cols-2 gap-4 px-5 py-3">
+          <a href="#" class="avara-logo"
+            ><img src="./assets/images/logo.png" alt="avara logo"
+          /></a>
+          <div class="flex items-center justify-end gap-x-4">
+            <div class="header-profile">
+              <div class="photo">
+                <img src="./assets/images/user.png" alt="photo profile" />
+              </div>
+              <div class="profile-name">
+                <span>Halo</span>
+                <span class="name">Fajar</span>
+              </div>
+            </div>
+            <a href="#" class="header-notif">
+              <span class="ri-notification-2-fill"></span>
+            </a>
+            <a href="#" class="header-menu">
+              <span class="ri-menu-line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-content">
+          <ul class="navbar-list">
+            <li><a href="dashboard_teknisi.html">Beranda</a></li>
+            <li><a href="aktifitas.html">Aktifitas</a></li>
+            <li><a href="pemberitahuan.html">Pemberitahuan</a></li>
+            <li><a href="kontak_admin.html">Kontak Admin</a></li>
+            <li>
+              <a href="#">Keluar <span class="ri-logout-box-r-line"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="body-content">
+      <div class="container">
+        <div class="wrapper">
+          <h3>Data Asset</h3>
+          <form action="" id="form-asset">
+            <div class="item-asset">
+              <div class="img-asset">
+                <img src="./assets/images/img1.png" alt="image" />
+                <img src="./assets/images/img2.png" alt="image" />
+                <img src="./assets/images/img3.png" alt="image" />
+                <img src="./assets/images/img4.png" alt="image" />
+              </div>
+              <div class="input-file">
+                  <input type="file" id="fileInput" class="hidden" />
+                  <label for="fileInput" class="btn-upload"> Upload </label>
+                  <div id="fileName" class="hidden name_file">
+                    <span id="fileNameText"></span>
+                  </div>
+              </div>
+              <div class="input-group">
+                <label for="tgl_validasi">Tanggal Validasi</label>
+                <input type="text" id="tgl_validasi" />
+              </div>
+              <div class="input-group">
+                <label for="waktu_pendataan">Waktu Pendataan</label>
+                <input type="date" placeholder="Select date" id="waktu_pendataan">
+              </div>
+              <div class="input-group">
+                <label for="lokasi">Lokasi</label>
+                <input type="text" id="lokasi" />
+              </div>
+              <div class="input-group">
+                <label for="kode_asset">Kode Data Asset</label>
+                <input type="text" id="kode_asset" />
+              </div>
+              <div class="input-group">
+                <label for="nama_asset">Nama Asset</label>
+                <input type="text" id="nama_asset" />
+              </div>
+              <div class="input-group">
+                <label for="label_asset">Label Asset</label>
+                <input type="text" id="label_asset" />
+              </div>
+              <div class="input-group">
+                <label for="jenis_obj">Jenis Objek</label>
+                <input type="text" id="jenis_obj" />
+              </div>
+              <div class="input-group">
+                <label for="lokasi_kontruksi">Lokasi Konstruksi</label>
+                <input type="text" id="lokasi_kontruksi" />
+              </div>
+              <div class="input-group">
+                <label for="potensi_masalah">Potensi Masalah</label>
+                <input type="text" id="potensi_masalah" />
+              </div>
+              <div class="input-group">
+                <label for="rekomendasi_perbaikan">Rekomendasi Perbaikan</label>
+                <input type="text" id="rekomendasi_perbaikan" />
+              </div>
+              <div class="input-group">
+                <label for="penjelasan_rekomendasi_perbaikan">Penjelasan Rekomendasi Perbaikan</label>
+                <input type="text" id="penjelasan_rekomendasi_perbaikan" />
+              </div>
+              <div class="input-group input-inline">
+                <label for="pop">POP</label>
+                <input type="text" id="pop" />
+              </div>
+              <div class="input-group input-inline">
+                <label for="olt">OLT</label>
+                <input type="text" id="olt" />
+              </div>
+              <div class="input-group input-inline">
+                <label for="jumlah_port">Jumlah Port</label>
+                <input type="number" id="jumlah_port" />
+              </div>
+              <div class="input-group input-inline">
+                <label for="jumlah_port_terdata">Jumlah Port Terdata</label>
+                <input type="number" id="jumlah_port_terdata" />
+              </div>
+              <div class="input-group input-inline">
+                <label for="jumlah_label_terdata">Jumlah Label Terdata</label>
+                <input type="number" id="jumlah_label_terdata" />
+              </div>
+            </div>
+            <div class="item-asset">
+              <div class="input-group">
+                <label>Data Redaman & Arah Jumper Port 1-12</label>
+                <div class="select-grid">
+                  <select name="data_port" id="data_port">
+                    <option value="1" selected>Data Port 1</option>
+                    <option value="2">Data Port 2</option>
+                    <option value="3">Data Port 3</option>
+                  </select>
+                  <select name="jamper" id="jamper">
+                    <option value="1" selected>Jamper ke 37</option>
+                    <option value="2">Jamper ke 38</option>
+                    <option value="3">Jamper ke 39</option>
+                  </select>
+                  <select name="data_port2" id="data_port2">
+                    <option value="1" disabled selected>Pilih Data Port</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>
+                  <select name="jamper2" id="jamper2">
+                    <option value="1" disabled selected>Jamper ke</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>                  
+                </div>
+                <div class="flex justify-center mt-4">
+                  <button class="btn-secondary btn-icon">
+                    <span class="ri-add-circle-fill"></span>
+                    Tambah Data Port
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="item-asset">
+              <div class="input-group">
+                <label for="">Data Redaman & Arah Jumper Port 13-24</label>
+                <div class="select-grid">
+                  <select name="data_port3" id="data_port3">
+                    <option value="1" selected>Data Port 13</option>
+                    <option value="2">Data Port 2</option>
+                    <option value="3">Data Port 3</option>
+                  </select>
+                  <select name="jamper3" id="jamper3">
+                    <option value="1" selected>Jamper ke 45</option>
+                    <option value="2">Jamper ke 38</option>
+                    <option value="3">Jamper ke 39</option>
+                  </select>
+                  <select name="data_port4" id="data_port4">
+                    <option value="1" disabled selected>Pilih Data Port</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>
+                  <select name="jamper4" id="jamper4">
+                    <option value="1" disabled selected>Jamper ke</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>                  
+                </div>
+                <div class="flex justify-center mt-4">
+                  <button class="btn-secondary btn-icon">
+                    <span class="ri-add-circle-fill"></span>
+                    Tambah Data Port
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="item-asset">
+              <div class="input-group">
+                <label for="">Data Redaman & Arah Jumper Port 37-44</label>
+                <div class="select-grid">
+                  <select name="data_port5" id="data_port5">
+                    <option value="1" selected>Data Port 37</option>
+                    <option value="2">Data Port 2</option>
+                    <option value="3">Data Port 3</option>
+                  </select>
+                  <select name="jamper5" id="jamper5">
+                    <option value="1" selected>Jamper ke 1</option>
+                    <option value="2">Jamper ke 38</option>
+                    <option value="3">Jamper ke 39</option>
+                  </select>
+                  <select name="data_port6" id="data_port6">
+                    <option value="1" disabled selected>Pilih Data Port</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>
+                  <select name="jamper6" id="jamper6">
+                    <option value="1" disabled selected>Jamper ke</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>                  
+                </div>
+                <div class="flex justify-center mt-4">
+                  <button class="btn-secondary btn-icon">
+                    <span class="ri-add-circle-fill"></span>
+                    Tambah Data Port
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="item-asset">
+              <div class="input-group">
+                <label for="">Data Redaman & Arah Jumper Port 45-48</label>
+                <div class="select-grid">
+                  <select name="data_port7" id="data_port7">
+                    <option value="1" selected>Data Port 45</option>
+                    <option value="2">Data Port 2</option>
+                    <option value="3">Data Port 3</option>
+                  </select>
+                  <select name="jamper7" id="jamper7">
+                    <option value="1" selected>Jamper ke 13</option>
+                    <option value="2">Jamper ke 38</option>
+                    <option value="3">Jamper ke 39</option>
+                  </select>
+                  <select name="data_port8" id="data_port8">
+                    <option value="1" disabled selected>Pilih Data Port</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>
+                  <select name="jamper8" id="jamper8">
+                    <option value="1" disabled selected>Jamper ke</option>
+                    <option value="2">Data Port 1</option>
+                    <option value="3">Data Port 2</option>
+                  </select>                  
+                </div>
+                <div class="flex justify-center mt-4">
+                  <button class="btn-secondary btn-icon">
+                    <span class="ri-add-circle-fill"></span>
+                    Tambah Data Port
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="item-asset">
+              <div class="input-group">
+                <label for="">Label Patchcore Port 37-44</label>
+                <div class="select-grid">
+                  <select name="data_port9" id="data_port9">
+                    <option value="1" selected>Label Port 37</option>
+                    <option value="2">Label Port 38</option>
+                    <option value="3">Label Port 39</option>
+                  </select>
+                  <select name="jamper9" id="jamper9">
+                    <option value="1" selected>Uplink Splitter</option>
+                    <option value="2">Uplink Splitter 2</option>
+                    <option value="3">Uplink Splitter 3</option>
+                  </select>          
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="button-bottom">
+      <div class="container">
+        <div class="button-content">
+          <button class="btn-secondary btn-disabled">BATAL</button>
+          <button class="!m-0 btn-primary">SIMPAN</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery-1.11.0.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

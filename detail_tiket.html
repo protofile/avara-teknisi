@@ -52,11 +52,11 @@
         <!-- content -->
          <div class="body-content detail-tiket">  
             <div class="container">
-                <a href="dashboard_teknisi.html" class="back-to">
-                    <span class="text-xl ri-arrow-left-s-line"></span>
-                    <span>Kembali</span>
-                </a>
                 <div class="wrapper">
+                    <a href="dashboard_teknisi.html" class="back-to">
+                        <span class="text-xl ri-arrow-left-s-line"></span>
+                        <span>Kembali</span>
+                    </a>
                     <div class="content-shadow">
                         <div class="detail-text">
                             <span>No. Tiket</span>
@@ -77,16 +77,29 @@
                         </div>
                         <div class="detail-text">
                             <span>Datek</span>
-                            <div class="icon-text">
-                                <p>TGRCURSR01 PORT 1/1/2</p>
-                                <a href="#" class="ri-add-circle-line"></a>
-                            </div>
+                            <form action="" class="mt-2">
+                                <div class="input-group">
+                                    <textarea name="datek">
+2024424471 - INDOSAT TBK BNI KCP CITEREUP
+
+ODP KASAKATA
+PORT 26
+
+CLOSURE ODP
+K48 T3 C2&gt;&lt;K96 T4 C9
+
+CLOSURE XCC  SPBU
+K96 T4 C9&gt;&lt;K48 T1 C8
+
+CLOSURE DEPAN PELANGGAN
+                                    </textarea>
+                                </div>
+                            </form>
                         </div>
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" placeholder="Tambah Datek Baru">
-                            </div>
-                        </form>
+                        <div class="group-between">
+                            <span class="text-gray-600">Data Asset</span>
+                            <a href="detail_asset.html" class="btn-secondary">Lihat Data Asset</a>
+                        </div>
                         
                         <div class="pic-content">
                             <h4>PIC</h4>
@@ -168,8 +181,8 @@
         <div class="avara-keyboard">
             <div class="container">
                 <form action="">
-                    <div class="input-group">
-                        <div class="icon icon-start ri-attachment-2"></div> 
+                    <div class="input-group-icon">
+                        <div class="icon icon-start ri-camera-line"></div> 
                         <input type="password" placeholder="Tulis update disini...">   
                         <div class="icon ri-send-plane-fill"></div>    
                     </div>
